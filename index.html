@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manali Gupta ❤ Adarsh Gupta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient"></div>
+  <div class="floating-layer" id="floatingLayer" aria-hidden="true"></div>
+  <button class="sound-toggle" id="soundToggle" aria-label="Mute or unmute music">♪ Muted</button>
+
+  <audio id="bgMusic" loop>
+    <!-- Replace this source with your own romantic song file, for example: assets/our-song.mp3 -->
+    <source src="" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <section class="page landing-page active" id="landingPage">
+      <div class="hero-frame reveal">
+        <p class="eyebrow">Made with love by Adarsh for Manali</p>
+        <h1>Manali Gupta ❤</h1>
+        <p class="hero-subtitle">I've made something special for the most beautiful person in my life.</p>
+        <p class="created">Created by Adarsh Gupta</p>
+        <p class="soft-note">Not every feeling can be explained in words... so I built this for you.</p>
+        <button class="primary-button" id="continueButton">Continue My Love →</button>
+      </div>
+      <p class="page-footer">Manali Gupta ❤ Adarsh Gupta · Every pixel here carries a feeling</p>
+    </section>
+
+    <section class="page password-page" id="passwordPage">
+      <div class="lock-card reveal">
+        <div class="lock-icon" id="lockIcon">♥</div>
+        <p class="eyebrow">Our story matters</p>
+        <h2>Some things are meant only for you ❤</h2>
+        <p>Only Manali can unlock what Adarsh created with love.</p>
+        <div class="password-box">
+          <input id="passwordInput" type="password" placeholder="Enter the secret password" autocomplete="off" />
+          <button id="unlockButton">Unlock</button>
+        </div>
+        <p class="password-message" id="passwordMessage"></p>
+      </div>
+      <p class="page-footer">Made by Adarsh for Manali · Built with love, not code</p>
+    </section>
+
+    <section class="page surprise-page" id="surprisePage">
+      <nav class="love-nav">
+        <span>Manali Gupta ❤ Adarsh Gupta</span>
+        <a href="#gallery">Memories</a>
+        <a href="#reasons">Reasons</a>
+        <a href="#letter">Letter</a>
+        <a href="#forever">Forever</a>
+      </nav>
+
+      <section class="section intro-section reveal">
+        <p class="eyebrow">Made by Adarsh for Manali</p>
+        <h2>Manali Gupta, You Changed My World ❤</h2>
+        <p class="quote">"Some people enter our life and quietly become the reason behind our happiness."</p>
+      </section>
+
+      <section class="section gallery-section reveal" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">A luxury scrapbook of us</p>
+          <h2>Photo Gallery</h2>
+          <p>Replace each placeholder image path in this page with your favorite Manali and Adarsh memories.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="photo-card polaroid tilt-left">
+            <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 1" />
+            <figcaption>Manali, my favorite smile</figcaption>
+          </figure>
+          <figure class="photo-card hanging tilt-right">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 2" />
+            <figcaption>Adarsh made this for you</figcaption>
+          </figure>
+          <figure class="photo-card floral tilt-left">
+            <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 3" />
+            <figcaption>Our little forever</figcaption>
+          </figure>
+          <figure class="photo-card premium tilt-right">
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 4" />
+            <figcaption>Every road feels softer</figcaption>
+          </figure>
+          <figure class="photo-card polaroid tilt-right">
+            <img src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 5" />
+            <figcaption>Manali ❤ Adarsh</figcaption>
+          </figure>
+          <figure class="photo-card hanging tilt-left">
+            <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 6" />
+            <figcaption>Built with love, not code</figcaption>
+          </figure>
+          <figure class="photo-card floral tilt-right">
+            <img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 7" />
+            <figcaption>You make ordinary magical</figcaption>
+          </figure>
+          <figure class="photo-card premium tilt-left">
+            <img src="https://images.unsplash.com/photo-1513278974582-3e1b4a4fa21e?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 8" />
+            <figcaption>Forever yours, Adarsh</figcaption>
+          </figure>
+          <figure class="photo-card polaroid tilt-left">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 9" />
+            <figcaption>My heart's home</figcaption>
+          </figure>
+          <figure class="photo-card premium tilt-right">
+            <img src="https://images.unsplash.com/photo-1509225770129-fbcf8a696c0b?auto=format&fit=crop&w=900&q=80" alt="Replaceable romantic photo slot 10" />
+            <figcaption>Only for Manali</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section reasons-section reveal" id="reasons">
+        <div class="section-heading">
+          <p class="eyebrow">Reasons Adarsh loves Manali</p>
+          <h2>Reasons Why I Love You</h2>
+        </div>
+        <div class="reason-grid">
+          <button class="reason-card"><span>Your smile</span><em>It turns my difficult days gentle.</em></button>
+          <button class="reason-card"><span>Your kindness</span><em>You make love feel peaceful.</em></button>
+          <button class="reason-card"><span>The way you care</span><em>You notice what my heart forgets to say.</em></button>
+          <button class="reason-card"><span>Your beautiful eyes</span><em>They hold a world I never want to leave.</em></button>
+          <button class="reason-card"><span>The way you understand me</span><em>With you, I never feel alone.</em></button>
+          <button class="reason-card"><span>Your presence makes everything better</span><em>Life feels complete around you.</em></button>
+        </div>
+      </section>
+
+      <section class="section letter-section reveal" id="letter">
+        <p class="eyebrow">A handwritten piece of Adarsh's heart</p>
+        <h2>Love Letter</h2>
+        <article class="letter-box">
+          <div class="letter-text" id="letterText">
+            <p>Dear Manali,</p>
+            <p>Sometimes I wonder how life suddenly became so beautiful, and then I remember... it happened when you became part of it.</p>
+            <p>You have brought happiness, peace, and meaning into places I never thought could feel complete.</p>
+            <p>I may not always express everything perfectly, but every little effort I make carries one truth...</p>
+            <p>You mean more to me than words can explain.</p>
+            <p>This website is just a tiny reflection of what I feel.</p>
+            <p>Forever yours,<br />Adarsh ❤</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section quotes-section reveal">
+        <p class="eyebrow">Emotional notes for Manali Gupta</p>
+        <h2 id="quoteText">Every love story is beautiful, but ours is my favorite.</h2>
+      </section>
+
+      <section class="section counter-section reveal">
+        <p class="eyebrow">Special Counter</p>
+        <h2>Days Adarsh has been thinking about Manali</h2>
+        <div class="counter" id="loveCounter">0</div>
+        <p class="tiny-line">Counting from the day this surprise began: 29 October 2024.</p>
+      </section>
+
+      <section class="section music-section reveal">
+        <div>
+          <p class="eyebrow">Our Vibes ♪</p>
+          <h2>A song for Manali and Adarsh</h2>
+          <p>Add your favorite song in the audio source and let this little record spin for her.</p>
+        </div>
+        <div class="vinyl" aria-hidden="true"><span></span></div>
+      </section>
+
+      <section class="ending-section" id="forever">
+        <div class="stars"></div>
+        <p class="eyebrow">Forever written softly</p>
+        <h2>Manali Gupta ❤ Adarsh Gupta</h2>
+        <p>No expensive gift can ever match what I feel for you... so I made this piece of my heart.</p>
+        <h3>Made with endless love by Adarsh Gupta</h3>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

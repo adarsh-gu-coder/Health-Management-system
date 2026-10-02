@@ -1,0 +1,99 @@
+:root {
+  --rose: #d94f86;
+  --deep-rose: #9d315d;
+  --peach: #ffd7c8;
+  --blush: #fff2f5;
+  --cream: #fffaf2;
+  --gold: #c9975a;
+  --ink: #5a263d;
+  --night: #21101d;
+  --glass: rgba(255, 255, 255, 0.42);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 194, 214, 0.95), transparent 32%),
+    radial-gradient(circle at 85% 15%, rgba(255, 217, 187, 0.9), transparent 30%),
+    linear-gradient(135deg, #fff8f0 0%, #ffe6ef 50%, #fff7fb 100%);
+  overflow-x: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.ambient {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.7), transparent 23%),
+    radial-gradient(circle at 20% 80%, rgba(217, 79, 134, 0.22), transparent 26%),
+    radial-gradient(circle at 80% 75%, rgba(201, 151, 90, 0.2), transparent 28%);
+  filter: blur(4px);
+}
+
+.floating-layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.float-item,
+.trail {
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  z-index: 20;
+}
+
+.float-item {
+  bottom: -40px;
+  animation: floatUp linear forwards;
+  opacity: 0.75;
+}
+
+.trail {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, #ffd0df 45%, transparent 70%);
+  animation: fadeTrail 850ms ease-out forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-115vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeTrail {
+  to {
+    transform: translateY(-24px) scale(0);
+    opacity: 0;
+  }
+}
+
+.page {
+  display: none;
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+}
